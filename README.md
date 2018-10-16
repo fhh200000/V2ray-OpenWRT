@@ -10,7 +10,7 @@ https://github.com/coolsnowwolf/lede/pull/331
 Note the package dnsmasq-full would make a conflict with the current dnsmasq,so run the following commands:  
 注意依赖包dnsmasq-full会与现存项目dnsmasq冲突，所以请运行以下命令：  
 opkg remove dnsmasq  
-opkg install YourFileNameOfDnsmasq-full(你的dnsmasq-full文件名称)  
+opkg install dnsmasq-full  
 2.Because OpenWRT's ip command isn't in its correct place so a link is required:  
 2.因为OpenWRT的ip命令不在其正确的位置上，所以我们需要一个链接：  
 which ip  
