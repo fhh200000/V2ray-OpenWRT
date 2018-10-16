@@ -1,27 +1,27 @@
 # V2ray-OpenWRT
 Compiled V2Ray Binaries for OpenWRT(ipk file)
-ÎªOpenWRT±àÒëµÄV2Ray¶ş½øÖÆÎÄ¼ş£¨ipk¸ñÊ½£©
+ä¸ºOpenWRTç¼–è¯‘çš„V2RayäºŒè¿›åˆ¶æ–‡ä»¶ï¼ˆipkæ ¼å¼ï¼‰
 Source Merged from an "Outdated" Lede firmware
-Ô´´úÂë´ÓÒ»·İ¡°¹ıÊ±¡±µÄLede¹Ì¼ş´¦ºÏ²¢
+æºä»£ç ä»ä¸€ä»½â€œè¿‡æ—¶â€çš„Ledeå›ºä»¶å¤„åˆå¹¶
 https://github.com/coolsnowwolf/lede/pull/331
 #--------------Installations----------------
 1.Install V2ray,V2ray Pro and the Depencies
-1.°²×°V2ray,V2ray ProºÍÒÀÀµ
+1.å®‰è£…V2ray,V2ray Proå’Œä¾èµ–
 Note the package dnsmasq-full would make a conflict with the current dnsmasq,so run the following commands:
-×¢ÒâÒÀÀµ°üdnsmasq-full»áÓëÏÖ´æÏîÄ¿dnsmasq³åÍ»£¬ËùÒÔÇëÔËĞĞÒÔÏÂÃüÁî£º
+æ³¨æ„ä¾èµ–åŒ…dnsmasq-fullä¼šä¸ç°å­˜é¡¹ç›®dnsmasqå†²çªï¼Œæ‰€ä»¥è¯·è¿è¡Œä»¥ä¸‹å‘½ä»¤ï¼š
 opkg remove dnsmasq
-opkg install YourFileNameOfDnsmasq-full(ÄãµÄdnsmasq-fullÎÄ¼şÃû³Æ)
+opkg install YourFileNameOfDnsmasq-full(ä½ çš„dnsmasq-fullæ–‡ä»¶åç§°)
 2.Because OpenWRT's ip command isn't in its correct place so a link is required:
-2.ÒòÎªOpenWRTµÄipÃüÁî²»ÔÚÆäÕıÈ·µÄÎ»ÖÃÉÏ£¬ËùÒÔÎÒÃÇĞèÒªÒ»¸öÁ´½Ó£º
+2.å› ä¸ºOpenWRTçš„ipå‘½ä»¤ä¸åœ¨å…¶æ­£ç¡®çš„ä½ç½®ä¸Šï¼Œæ‰€ä»¥æˆ‘ä»¬éœ€è¦ä¸€ä¸ªé“¾æ¥ï¼š
 which ip
-ln -s YourIPPathFromWhich(whichÖĞÏÔÊ¾µÄµØÖ·) /usr/bin/ip
+ln -s YourIPPathFromWhich(whichä¸­æ˜¾ç¤ºçš„åœ°å€) /usr/bin/ip
 3.Generate V2Ray profile manually by using:
-3.Í¨¹ıÒÔÏÂÃüÁîÊÖ¶¯Éú³ÉV2rayÅäÖÃÎÄ¼ş£º
+3.é€šè¿‡ä»¥ä¸‹å‘½ä»¤æ‰‹åŠ¨ç”ŸæˆV2rayé…ç½®æ–‡ä»¶ï¼š
 cd /etc/v2ray
 lua gen_config.lua
-cp TheGeneratedProfile(ÉÏÒ»²½Éú³ÉµÄÅäÖÃÎÄ¼ş) ./
+cp TheGeneratedProfile(ä¸Šä¸€æ­¥ç”Ÿæˆçš„é…ç½®æ–‡ä»¶) ./
 4.Enable the LuCi V2ray-Pro server
-4.Æô¶¯Í¼ĞÎ»¯V2Ray-Pro·şÎñÆ÷
+4.å¯åŠ¨å›¾å½¢åŒ–V2Ray-ProæœåŠ¡å™¨
 service v2raypro start
 5.Further settings in LuCi interface
-ÔÚLuCi½çÃæÖĞÍêÉÆÉèÖÃ
+åœ¨LuCiç•Œé¢ä¸­å®Œå–„è®¾ç½®
