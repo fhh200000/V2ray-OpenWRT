@@ -6,9 +6,9 @@ Source merged from an "Outdated" Lede firmware
 https://github.com/coolsnowwolf/lede/pull/331  
 #-----------------Versions------------------  
 For soft routers please visit x86-64 branch.  
-软路由请移步X86-64分支。
-MT7621 or other mipsel-24kc platforms please visit mipsel-24kc branch.
-MT7621或者其他mipsel-24kc平台请移步mipsel-24kc分支。
+软路由请移步X86-64分支。  
+MT7621 or other mipsel-24kc platforms please visit mipsel-24kc branch.  
+MT7621或者其他mipsel-24kc平台请移步mipsel-24kc分支。  
 (Not recommended for installation on a real router due to the low performance)
 （因为超乎预期的低性能，不推荐在硬件路由器上使用）
 #--------------Installations----------------  
