@@ -4,6 +4,11 @@ Compiled V2Ray Binaries for OpenWRT(ipk file)
 Source Merged from an "Outdated" Lede firmware  
 源代码从一份“过时”的Lede固件处合并  
 https://github.com/coolsnowwolf/lede/pull/331  
+#-----------------Versions------------------  
+For soft routers please visit x86-64 branch.  
+软路由请移步X86-64分支。  
+MT7621 or other mipsel-24kc platforms please visit mipsel-24kc branch.  
+MT7621或者其他mipsel-24kc平台请移步mipsel-24kc分支。  
 #--------------Installations----------------  
 1.Install V2ray,V2ray Pro and the Depencies  
 1.安装V2ray,V2ray Pro和依赖  
